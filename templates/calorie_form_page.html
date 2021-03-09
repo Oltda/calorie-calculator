@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/calorie_form.css">
+</head>
+<body>
+    <h1 class="calorieHeading">Calorie Calculator</h1>
+
+<form action="/" method="post">
+        {% if result %}
+
+    <p class="result">You should consume {{my_intake}} calories (kcal) today.</p>
+    {% endif %}
+
+    {% if noresult %}
+
+    <p class="result error">Your city or country was not found. Try again</p>
+    {% endif %}
+
+
+
+    {{calorieForm.weight.label}} {{calorieForm.weight}}
+    <br>
+    {{calorieForm.height.label}} {{calorieForm.height}}
+    <br>
+    {{calorieForm.age.label}} {{calorieForm.age}}
+    <br>
+    {{calorieForm.country.label}} {{calorieForm.country}}
+    <br>
+    {{calorieForm.city.label}} {{calorieForm.city}}
+    <br>
+    <div>
+    {{calorieForm.button}}
+    </div>
+
+
+
+</form>
+
+
+</body>
+</html>

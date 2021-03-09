@@ -1,0 +1,122 @@
+body {
+    font-family: Helvetica;
+}
+
+.calorieHeading{
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-size: 60px;
+
+}
+
+form {
+    position: relative;
+    width: 50%;
+
+    border-radius: 10px;
+    padding: 35px 15px;
+    padding-bottom: 60px;
+    background-color: #afeeee;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 400px;
+    margin-bottom: 100px;
+}
+
+
+input[type=text] {
+    width: 90%;
+    padding: 8px 8px;
+    margin: 10px 0px;
+    font-size: 20px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid SlateGrey;
+    background-color: #afeeee;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border-bottom: 2px solid SlateGrey;
+}
+
+label {
+display: block;
+font-size: 20px;
+}
+
+
+input[type=submit] {
+    position: relative;
+    background: #06c606;
+    border: none;
+    padding: 15px 15px;
+
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    left: 75%;
+
+}
+
+input[type=submit]:hover {
+    background: #52fa52;
+    color: black;
+
+}
+
+div {
+    width: 95%;
+
+}
+
+.result{
+
+    background: white;
+    width: 95%;
+    font-size: 22px;
+    text-align: center;
+
+    border-radius: 10px;
+    margin-bottom: 70px;
+    padding: 10px 10px;
+}
+
+.error{
+    background: #fa8072;
+}
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (min-device-height: 300px)
+  and (max-device-height: 900px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   form {
+    position: absolute;;
+    width: 70%;
+
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%)
+   }
+
+   input[type=text] {
+   margin-bottom: 25px;
+   }
+
+   .result{
+      margin-bottom: 65px;
+
+   }
+
+
+
+
+
+  }
